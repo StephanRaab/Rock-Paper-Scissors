@@ -25,20 +25,24 @@ function computerMath(){
 var computerChoice = computerMath();
 
 //hide losing text
+//hide tied text
 //show winning text
 //add one to our wincounter
 function win(){
     $('.losingText').hide();
+    $('.tiedText').hide();
     $('.winningText').show();
     winCounter++;
     $("#winCounter").html(winCounter);
 }
 
 //hide winning text
+//hide tied text
 //show losing text
 //add one to losecounter
 function lose(){
     $('.winningText').hide();
+    $('.tiedText').hide();
     $('.losingText').show();
     loseCounter++;
     $("#loseCounter").html(loseCounter);
@@ -90,7 +94,7 @@ var losingText = ("losingText");
 //run battle function
 //run new computerMath
 $("button").click(function(){
+    computerMath();
     userChoice = $(this).prop('id');
     battle();
-    computerMath();
 });

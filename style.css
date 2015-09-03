@@ -22,11 +22,23 @@ h6{
     font-size: 37px;
 }
 
+.container{
+  margin: 0px auto;
+  padding: 10px 200px 0px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.score{
+  display: flex;
+  align-items: center;
+}
+
 #rock{
     border-radius: 50%;
     border: none;
     background-color: #ca4087;
-    background-image: url("../img/Rock-Still.png");
+    background-image: url("img/Rock-Still.png");
     height:145px;
     margin: 30px;
     width: 145px;
@@ -41,7 +53,7 @@ h6{
     border-radius: 50%;
     border: none;
     background-color: #40cac5;
-    background-image: url("../img/Paper-Still.png");
+    background-image: url("img/Paper-Still.png");
     height:145px;
     margin: 30px;
     width: 145px;
@@ -55,7 +67,7 @@ h6{
     border-radius: 50%;
     border: none;
     background-color: #cac240;
-    background-image: url("../img/Scissor-Still.png");
+    background-image: url("img/Scissor-Still.png");
     height:145px;
     margin: 30px;
     width: 145px;
@@ -85,4 +97,3 @@ h6{
     display: none;
     color: white;
 }
-

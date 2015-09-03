@@ -5,7 +5,7 @@ http://imgur.com/lfjeNlH,f9Uu8YJ,zCaXT6N#2
 <html>
 <title>Rock Paper Scissors</title>
 <head>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
     <script type="text/javascript">
@@ -15,9 +15,8 @@ http://imgur.com/lfjeNlH,f9Uu8YJ,zCaXT6N#2
     </script> <!-- Load local jQuery if Google CDN is unreachable -->
 </head>
 <body>
-
+  <div class="container">
     <h1>ROCK, PAPER, SCISSORS</h1>
-
     <h2>PICK YOUR WEAPON!</h2>
 
     <div class="buttons">
@@ -38,10 +37,13 @@ http://imgur.com/lfjeNlH,f9Uu8YJ,zCaXT6N#2
         <h2>You Lost!</h2>
     </div>
 
-    <h6>Won: <div id = "winCounter"> 0 </div> </h6>
-    <h6>Lost: <div id = "loseCounter" > 0 < /div> </h6>
+    <div class="score">
+      <h6>Won: <div id = "winCounter"> 0 </div> </h6>
+      <h6>Lost: <div id = "loseCounter" > 0 </div> </h6>
+    </div>
 
-<script src="/script.js" type="text/javascript"></script>
+  </div>
+<script src="script.js" type="text/javascript"></script>
 
 </body>
 </html>
