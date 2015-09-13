@@ -1,9 +1,38 @@
 //clears the console
 console.clear();
 
+//Added rotation to the dotted circles
+$(".dottedCircle").mouseenter(function() {
+  $(this).addClass('rotateCircleIn');
+});
+$(".dottedCircle").mouseenter(function() {
+  $(this).removeClass('rotateCircleOut');
+});
+
+$(".dottedCircle").mouseleave(function() {
+  $(this).addClass('rotateCircleOut');
+});
+$(".dottedCircle").mouseleave(function() {
+  $(this).removeClass('rotateCircleIn');
+});
+
+//Image static on rotation
+$(".dottedCircle").mouseenter(function() {
+  $(this.child).addClass('rotateCircleOut');
+});
+$(".dottedCircle").mouseenter(function() {
+  $(this.child).removeClass('rotateCircleIn');
+});
+
+$(".dottedCircle").mouseleave(function() {
+  $(this.child).addClass('rotateCircleIn');
+});
+$(".dottedCircle").mouseleave(function() {
+  $(this.child).removeClass('rotateCircle');
+});
+
 //defining the userchoice variable for later use
 var userChoice;
-
 
 //function called computermath which uses math random to determine the computer's choice
 function computerMath(){
@@ -25,20 +54,24 @@ function computerMath(){
 var computerChoice = computerMath();
 
 //hide losing text
+//hide tied text
 //show winning text
 //add one to our wincounter
 function win(){
     $('.losingText').hide();
+    $('.tiedText').hide();
     $('.winningText').show();
     winCounter++;
     $("#winCounter").html(winCounter);
 }
 
 //hide winning text
+//hide tied text
 //show losing text
 //add one to losecounter
 function lose(){
     $('.winningText').hide();
+    $('.tiedText').hide();
     $('.losingText').show();
     loseCounter++;
     $("#loseCounter").html(loseCounter);
@@ -90,7 +123,7 @@ var losingText = ("losingText");
 //run battle function
 //run new computerMath
 $("button").click(function(){
+    computerMath();
     userChoice = $(this).prop('id');
     battle();
-    computerMath();
 });

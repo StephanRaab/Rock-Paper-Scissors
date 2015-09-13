@@ -1,88 +1,141 @@
 body{
-    background:#242e3b;
-    font-family:"Open Sans", sans-serif;
+  margin: 20px auto;
+  background:#242e3b;
+  font-family:"Open Sans", sans-serif;
 }
+
 h1{
-    font-family:"Open Sans", sans-serif;
-    font-weight:600;
-    font-style: italic;
-    color: #fff;
-    font-size: 77px;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  font-family:"Open Sans", sans-serif;
+  font-weight:600;
+  font-style: italic;
+  color: #fff;
+  font-size: 77px;
 }
 
 h2{
-    color: #fff;
-    font-size: 40px;
-
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  color: #fff;
+  font-size: 40px;
 }
 
 h6{
-    color: #6a9a9b;
-    margin: 20px;
-    font-size: 37px;
+  color: #6a9a9b;
+  margin: 20px auto;
+  font-size: 37px;
 }
 
-#rock{
-    border-radius: 50%;
-    border: none;
-    background-color: #ca4087;
-    background-image: url("../img/Rock-Still.png");
-    height:145px;
-    margin: 30px;
-    width: 145px;
-}
-
-#rock:hover{
-    background-image: url("http://i.imgur.com/f9Uu8YJ.gif");
-}
-
-
-#paper{
-    border-radius: 50%;
-    border: none;
-    background-color: #40cac5;
-    background-image: url("../img/Paper-Still.png");
-    height:145px;
-    margin: 30px;
-    width: 145px;
-}
-
-#paper:hover{
-    background-image: url("http://i.imgur.com/lfjeNlH.gif");
-}
-
-#scissors{
-    border-radius: 50%;
-    border: none;
-    background-color: #cac240;
-    background-image: url("../img/Scissor-Still.png");
-    height:145px;
-    margin: 30px;
-    width: 145px;
-}
-
-#scissors:hover{
-    background-image: url("http://i.imgur.com/zCaXT6N.gif");
+.container{
+  margin: 0px auto;
+  padding: 10px 200px 0px 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .buttons{
-    width: auto 0px;
-    margin: 20px;
+  display: flex;
+  flex-direction: row;
+  width: auto 0px;
+  margin: 20px;
+}
+
+.dottedCircle{
+  border-radius: 50%;
+  border: dashed;
+  border-color: #ffffff;
+  height: 201px;
+  width: 201px;
+  color: white;
+  padding: 0;
+  margin: 10px auto;
+}
+
+.rotateCircleIn{
+  transform: rotate(90deg);
+  transition: 1s all ease;
 }
 
 
+.rotateCircleOut{
+  transform: rotate(0deg);
+  transition: 1s all ease;
+}
+
+
+#rock{
+  border-radius: 50%;
+  border: none;
+  background-color: #ca4087;
+  background-image: url("img/Rock-Still.png");
+  height: 145px;
+  margin: 28px 28px;
+  width: 145px;
+  padding: 0;
+  display: block;
+
+}
+
+#rock:hover{
+  background-image: url("http://i.imgur.com/f9Uu8YJ.gif");
+}
+
+#paper{
+  border-radius: 50%;
+  border: none;
+  background-color: #40cac5;
+  background-image: url("img/Paper-Still.png");
+  height:145px;
+  margin: 30px;
+  width: 145px;
+}
+
+#paper:hover{
+  background-image: url("http://i.imgur.com/lfjeNlH.gif");
+}
+
+#scissors{
+  border-radius: 50%;
+  border: none;
+  background-color: #cac240;
+  background-image: url("img/Scissor-Still.png");
+  height:145px;
+  margin: 30px;
+  width: 145px;
+}
+
+#scissors:hover{
+  background-image: url("http://i.imgur.com/zCaXT6N.gif");
+}
+
 .winningText{
-    display: none;
-    color: white;
+  display: none;
+  color: white;
+  flex-direction: row;
 }
 
 .losingText{
-    display: none;
-    color: white;
+  display: none;
+  color: white;
+  flex-direction: row;
 }
 
 .tiedText{
-    display: none;
-    color: white;
+  display: none;
+  flex-direction: row;
+  color: white;
 }
 
+.score{
+  display: flex;
+  align-items: center;
+}
+
+.counterContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
