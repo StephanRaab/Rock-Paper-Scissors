@@ -27,6 +27,7 @@ h6{
   color: #6a9a9b;
   margin: 20px auto;
   font-size: 37px;
+  display: inline-flex;
 }
 
 .container{
@@ -59,12 +60,20 @@ h6{
   transition: 1s all ease;
 }
 
-
 .rotateCircleOut{
   transform: rotate(0deg);
   transition: 1s all ease;
 }
 
+.rotateChildIn{
+  transform: rotate(-90deg);
+  transition: 1s all ease;
+}
+
+.rotateChildOut{
+  transform: rotate(0deg);
+  transition: 1s all ease;
+}
 
 #rock{
   border-radius: 50%;
@@ -76,7 +85,6 @@ h6{
   width: 145px;
   padding: 0;
   display: block;
-
 }
 
 #rock:hover{
@@ -88,9 +96,11 @@ h6{
   border: none;
   background-color: #40cac5;
   background-image: url("img/Paper-Still.png");
-  height:145px;
-  margin: 30px;
+  height: 145px;
+  margin: 28px 28px;
   width: 145px;
+  padding: 0;
+  display: block;
 }
 
 #paper:hover{
@@ -102,9 +112,11 @@ h6{
   border: none;
   background-color: #cac240;
   background-image: url("img/Scissor-Still.png");
-  height:145px;
-  margin: 30px;
+  height: 145px;
+  margin: 28px 28px;
   width: 145px;
+  padding: 0;
+  display: block;
 }
 
 #scissors:hover{
@@ -115,18 +127,21 @@ h6{
   display: none;
   color: white;
   flex-direction: row;
+  margin-bottom: -95px;
 }
 
 .losingText{
   display: none;
   color: white;
   flex-direction: row;
+  margin-bottom: -95px;
 }
 
 .tiedText{
   display: none;
   flex-direction: row;
   color: white;
+  margin-bottom: -95px;
 }
 
 .score{
@@ -137,5 +152,5 @@ h6{
 .counterContainer{
   display: flex;
   flex-direction: row;
-  margin: 20px;
+  margin-top: 70px;
 }

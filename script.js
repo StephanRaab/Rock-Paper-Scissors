@@ -1,7 +1,4 @@
-//clears the console
-console.clear();
-
-//Added rotation to the dotted circles
+//Rotate the dotted circles
 $(".dottedCircle").mouseenter(function() {
   $(this).addClass('rotateCircleIn');
 });
@@ -18,17 +15,17 @@ $(".dottedCircle").mouseleave(function() {
 
 //Image static on rotation
 $(".dottedCircle").mouseenter(function() {
-  $(this.child).addClass('rotateCircleOut');
+  $(this).children().addClass('rotateChildIn');
 });
 $(".dottedCircle").mouseenter(function() {
-  $(this.child).removeClass('rotateCircleIn');
+  $(this).children().removeClass('rotateChildOut');
 });
 
 $(".dottedCircle").mouseleave(function() {
-  $(this.child).addClass('rotateCircleIn');
+  $(this).children().removeClass('rotateChildIn');
 });
 $(".dottedCircle").mouseleave(function() {
-  $(this.child).removeClass('rotateCircle');
+  $(this).children().addClass('rotateChildOut');
 });
 
 //defining the userchoice variable for later use
@@ -45,7 +42,6 @@ function computerMath(){
     } else {
         computerRandom = "scissors";
     }
-    console.log("computer chose " + computerRandom);
     return computerRandom;
 }
 
@@ -92,7 +88,7 @@ function battle(){
 //if userchoice equals computer choice show the tiedText
     if (userChoice === computerChoice) {
         tied();
-            return;
+          return;
     }
 
 //if user picks rock and computer picks scissors
@@ -123,7 +119,7 @@ var losingText = ("losingText");
 //run battle function
 //run new computerMath
 $("button").click(function(){
-    computerMath();
+    computerChoice = computerMath();
     userChoice = $(this).prop('id');
     battle();
 });
