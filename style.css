@@ -139,18 +139,17 @@ h6{
 }
 
 .winningText{
-  display: none;
-  transition: 1s all ease;
-  color: white;
-  flex-direction: row;
-  margin-bottom: -95px;
+    display: none;
+    color: #65ffb2;
+    flex-direction: row;
+    margin-bottom: -95px;
 }
 
 .losingText{
-  display: none;
-  color: white;
-  flex-direction: row;
-  margin-bottom: -95px;
+    display: none;
+    color: #ff65b2;
+    flex-direction: row;
+    margin-bottom: -95px;
 }
 
 .tiedText{
