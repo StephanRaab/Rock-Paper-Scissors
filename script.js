@@ -57,6 +57,7 @@ function win(){
     $('.losingText').hide();
     $('.tiedText').hide();
     $('.winningText').show();
+    $('.computerChoiceTextContainer').show();
     winCounter++;
     $("#winCounter").html(winCounter);
 }
@@ -69,8 +70,23 @@ function lose(){
     $('.winningText').hide();
     $('.tiedText').hide();
     $('.losingText').show();
+    $('.computerChoiceTextContainer').show();
     loseCounter++;
     $("#loseCounter").html(loseCounter);
+}
+
+function showComputerPicked() {
+    $('#computerChoiceText').html(computerChoice);
+}
+
+function computerPickedColor() {
+    if (computerChoice = "rock") {
+      $('#computerChoiceText').addClass('rockColor');
+    } else if (computerChoice = 'paper') {
+      $('#computerChoiceText').addClass('paperColor');
+    } else {
+      $('#computerChoiceText').addClass('scissorsColor');
+    }
 }
 
 //show tied text
@@ -80,6 +96,7 @@ function tied(){
     $('.winningText').hide();
     $('.losingText').hide();
     $(".tiedText").show();
+    $('.computerChoiceTextContainer').show();
 }
 
 //run function called battle
@@ -122,4 +139,6 @@ $("button").click(function(){
     computerChoice = computerMath();
     userChoice = $(this).prop('id');
     battle();
+    showComputerPicked();
+    computerPickedColor();
 });

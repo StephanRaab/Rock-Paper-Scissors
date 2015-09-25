@@ -75,6 +75,16 @@ h6{
   transition: 1s all ease;
 }
 
+.rockColor{
+  color: #ca4087;
+}
+.paperColor{
+  color: #40cac5;
+}
+.scissorsColor{
+  color: #cac240;
+}
+
 #rock{
   border-radius: 50%;
   border: none;
@@ -136,6 +146,17 @@ h6{
 
 #scissors:focus{
   outline: none;
+}
+
+.computerChoiceTextContainer{
+  display: none;
+  flex-direction: row;
+}
+
+#computerChoiceText{
+  margin-left: 12px;
+  color: #fff;
+  font-size: 40px;
 }
 
 .winningText{
