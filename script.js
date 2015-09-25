@@ -80,13 +80,14 @@ function showComputerPicked() {
 }
 
 function computerPickedColor() {
-    if (computerChoice = "rock") {
+    if (computerChoice === "rock") {
       $('#computerChoiceText').addClass('rockColor');
-    } else if (computerChoice = 'paper') {
+    } else if (computerChoice === 'paper') {
       $('#computerChoiceText').addClass('paperColor');
     } else {
       $('#computerChoiceText').addClass('scissorsColor');
     }
+    return;
 }
 
 //show tied text
