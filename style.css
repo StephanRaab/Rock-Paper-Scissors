@@ -57,22 +57,22 @@ h6{
 
 .rotateCircleIn{
   transform: rotate(90deg);
-  transition: 1s all ease;
+  transition: 1s cubic-bezier(0.25, 0.1, 0.28, 1.53);
 }
 
 .rotateCircleOut{
   transform: rotate(0deg);
-  transition: 1s all ease;
+  transition: 1s cubic-bezier(0.25, 0.1, 0.28, 1.53);
 }
 
 .rotateChildIn{
   transform: rotate(-90deg);
-  transition: 1s all ease;
+  transition: 1s cubic-bezier(0.25, 0.1, 0.28, 1.53);
 }
 
 .rotateChildOut{
   transform: rotate(0deg);
-  transition: 1s all ease;
+  transition: 1s cubic-bezier(0.25, 0.1, 0.28, 1.53);
 }
 
 .rockColor{
