@@ -32,7 +32,6 @@ h6{
 
 .container{
   margin: 0px auto;
-  padding: 10px 200px 0px 50px;
   display: flex;
   flex-direction: column;
 }
