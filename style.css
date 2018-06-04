@@ -160,21 +160,18 @@ h6{
     display: none;
     color: #65ffb2;
     flex-direction: row;
-    margin-bottom: -95px;
 }
 
 .losingText{
     display: none;
     color: #ff65b2;
     flex-direction: row;
-    margin-bottom: -95px;
 }
 
 .tiedText{
   display: none;
   flex-direction: row;
   color: white;
-  margin-bottom: -95px;
 }
 
 .score{
