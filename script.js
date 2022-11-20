@@ -1,30 +1,22 @@
 //Rotate the dotted circles
 $(".dottedCircle").mouseenter(function() {
   $(this).addClass('rotateCircleIn');
-});
-$(".dottedCircle").mouseenter(function() {
   $(this).removeClass('rotateCircleOut');
 });
 
 $(".dottedCircle").mouseleave(function() {
   $(this).addClass('rotateCircleOut');
-});
-$(".dottedCircle").mouseleave(function() {
   $(this).removeClass('rotateCircleIn');
 });
 
 //Image static on rotation
 $(".dottedCircle").mouseenter(function() {
   $(this).children().addClass('rotateChildIn');
-});
-$(".dottedCircle").mouseenter(function() {
   $(this).children().removeClass('rotateChildOut');
 });
 
 $(".dottedCircle").mouseleave(function() {
   $(this).children().removeClass('rotateChildIn');
-});
-$(".dottedCircle").mouseleave(function() {
   $(this).children().addClass('rotateChildOut');
 });
 
